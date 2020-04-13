@@ -7,20 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lb_hiJun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="185dp"
         android:text="Hi Jun"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="77dp"
         android:text="CheckBox"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintBottom_toTopOf="@+id/lb_hiJun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="261dp"
+        android:onClick="onClickButton"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_hiJun"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
