@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -45,13 +46,16 @@ public class OrderActivity extends AppCompatActivity implements NavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.home:
-                Toast.makeText(OrderActivity.this, "1", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(OrderActivity.this, MainActivity.class));
+                //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.search:
-                Toast.makeText(OrderActivity.this, "2", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (OrderActivity.this, SearchActivity.class));
+                //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.orderHistory:
-                Toast.makeText(OrderActivity.this, "3", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (OrderActivity.this, OrderActivity.class));
+                //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
                 Toast.makeText(OrderActivity.this, "4", Toast.LENGTH_SHORT).show();

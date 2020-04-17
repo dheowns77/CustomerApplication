@@ -73,13 +73,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.home:
-                Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, MainActivity.class));
+                //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.search:
-                Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, SearchActivity.class));
+                //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.orderHistory:
-                Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, OrderActivity.class));
+                //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
                 Toast.makeText(MainActivity.this, "4", Toast.LENGTH_SHORT).show();

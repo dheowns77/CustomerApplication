@@ -60,13 +60,16 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.home:
-                Toast.makeText(SearchActivity.this, "1", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, MainActivity.class));
+                //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.search:
-                Toast.makeText(SearchActivity.this, "2", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, SearchActivity.class));
+                //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.orderHistory:
-                Toast.makeText(SearchActivity.this, "3", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, OrderActivity.class));
+                //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
                 Toast.makeText(SearchActivity.this, "4", Toast.LENGTH_SHORT).show();
