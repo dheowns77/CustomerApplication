@@ -50,23 +50,28 @@ public class SupportActivity extends AppCompatActivity implements NavigationView
             case R.id.home:
                 startActivity(new Intent(SupportActivity.this, MainActivity.class));
                 //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.search:
                 startActivity(new Intent(SupportActivity.this, SearchActivity.class));
                 //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.orderHistory:
                 startActivity(new Intent(SupportActivity.this, OrderActivity.class));
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.support:
-                startActivity(new Intent(SupportActivity.this, SupportActivity.class));
+                //startActivity(new Intent(SupportActivity.this, SupportActivity.class));
                 break;
             case R.id.account:
                 startActivity(new Intent(SupportActivity.this, AccountActivity.class));
+                finish();
                 break;
             case R.id.setting:
                 startActivity(new Intent(SupportActivity.this, Set.class));
+                finish();
                 break;
         }
         return false;

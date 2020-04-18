@@ -48,23 +48,28 @@ public class OrderActivity extends AppCompatActivity implements NavigationView.O
             case R.id.home:
                 startActivity(new Intent(OrderActivity.this, MainActivity.class));
                 //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.search:
                 startActivity(new Intent (OrderActivity.this, SearchActivity.class));
                 //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.orderHistory:
-                startActivity(new Intent (OrderActivity.this, OrderActivity.class));
+                //startActivity(new Intent (OrderActivity.this, OrderActivity.class));
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
                 startActivity(new Intent (OrderActivity.this, SupportActivity.class));
+                finish();
                 break;
             case R.id.account:
                 startActivity(new Intent (OrderActivity.this, AccountActivity.class));
+                finish();
                 break;
             case R.id.setting:
                 startActivity(new Intent (OrderActivity.this, SettingsActivity.class));
+                finish();
                 break;
         }
         return false;
