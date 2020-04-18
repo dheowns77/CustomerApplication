@@ -26,6 +26,15 @@
                 android:text="Order History 1"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/c3"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -40,6 +49,9 @@
                 android:text="Order History3"
                 android:textSize="20sp"
                 android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"
