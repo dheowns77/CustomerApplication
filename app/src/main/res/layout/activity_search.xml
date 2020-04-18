@@ -150,7 +150,7 @@
             android:scaleType="fitXY"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:srcCompat="@drawable/conveniencestore" />
+            app:srcCompat="@drawable/convenience" />
 
         <ImageView
             android:id="@+id/imageView6"
