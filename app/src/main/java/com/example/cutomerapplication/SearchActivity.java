@@ -17,6 +17,8 @@ import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Set;
+
 public class SearchActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     androidx.appcompat.widget.Toolbar toolbar;
@@ -72,13 +74,15 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
-                Toast.makeText(SearchActivity.this, "4", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, SupportActivity.class));
+
+               // Toast.makeText(SearchActivity.this, "4", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.account:
-                Toast.makeText(SearchActivity.this, "5", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, AccountActivity.class));
                 break;
             case R.id.setting:
-                Toast.makeText(SearchActivity.this, "6", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (SearchActivity.this, SettingsActivity.class));
                 break;
         }
         return false;

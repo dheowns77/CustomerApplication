@@ -58,13 +58,13 @@ public class OrderActivity extends AppCompatActivity implements NavigationView.O
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
-                Toast.makeText(OrderActivity.this, "4", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (OrderActivity.this, SupportActivity.class));
                 break;
             case R.id.account:
-                Toast.makeText(OrderActivity.this, "5", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (OrderActivity.this, AccountActivity.class));
                 break;
             case R.id.setting:
-                Toast.makeText(OrderActivity.this, "6", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (OrderActivity.this, SettingsActivity.class));
                 break;
         }
         return false;

@@ -85,13 +85,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.support:
-                Toast.makeText(MainActivity.this, "4", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, SupportActivity.class));
                 break;
             case R.id.account:
-                Toast.makeText(MainActivity.this, "5", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, AccountActivity.class));
                 break;
             case R.id.setting:
-                Toast.makeText(MainActivity.this, "6", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent (MainActivity.this, SettingsActivity.class));
                 break;
         }
         return false;
