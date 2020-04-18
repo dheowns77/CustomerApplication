@@ -37,15 +37,4 @@
 
 
 
-
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="664dp"
-        android:text="Back"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="257dp" />
 </androidx.drawerlayout.widget.DrawerLayout>

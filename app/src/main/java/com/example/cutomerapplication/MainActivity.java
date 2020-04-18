@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        searchButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               startActivity(new Intent (MainActivity.this, SearchActivity.class));
+               startActivity(new Intent (MainActivity.this, CurOrderActivity.class));
            }
        });
 

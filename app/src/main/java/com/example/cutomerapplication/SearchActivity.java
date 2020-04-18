@@ -31,7 +31,6 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        configureBackButton();
 
         drawerLayout = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
@@ -48,15 +47,6 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
     private void setSupportActionBar(Toolbar toolbar) {
     }
 
-    private void configureBackButton(){
-        Button backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

@@ -54,6 +54,8 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
     private void setSupportActionBar(Toolbar toolbar) {
     }
 
+
+    //FIX THIS!
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -81,6 +83,7 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
         }
         return false;
     }
+
 
     public static class SettingsFragment extends PreferenceFragmentCompat {
         @Override
