@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
    private void configureSearchButton(){
 
-       Button searchButton = (Button) findViewById(R.id.searchButton);
-       searchButton.setOnClickListener(new View.OnClickListener() {
+       Button CurOrder1 = (Button) findViewById(R.id.CurOrder1);
+       CurOrder1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                startActivity(new Intent (MainActivity.this, CurOrderActivity.class));
