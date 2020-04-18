@@ -63,25 +63,31 @@ public class CurOrderActivity extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.home:
-                startActivity(new Intent(CurOrderActivity.this, MainActivity.class));
+                //startActivity(new Intent(CurOrderActivity.this, MainActivity.class));
                 //Toast.makeText(MainActivity.this, "1", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.search:
                 startActivity(new Intent (CurOrderActivity.this, SearchActivity.class));
                 //Toast.makeText(MainActivity.this, "2", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.orderHistory:
                 startActivity(new Intent (CurOrderActivity.this, OrderActivity.class));
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             case R.id.support:
                 startActivity(new Intent (CurOrderActivity.this, SupportActivity.class));
+                finish();
                 break;
             case R.id.account:
                 startActivity(new Intent (CurOrderActivity.this, AccountActivity.class));
+                finish();
                 break;
             case R.id.setting:
                 startActivity(new Intent (CurOrderActivity.this, SettingsActivity.class));
+                finish();
                 break;
         }
         return false;
