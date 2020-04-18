@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.cutomerapplication.MainActivity;
 import com.example.cutomerapplication.R;
 import com.example.cutomerapplication.ui.login.LoginViewModel;
 import com.example.cutomerapplication.ui.login.LoginViewModelFactory;
@@ -74,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                 setResult(Activity.RESULT_OK);
 
                 //Complete and destroy login activity once successful
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 finish();
             }
         });
