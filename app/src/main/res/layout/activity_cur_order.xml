@@ -37,7 +37,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/background"
+                android:background="@color/c6"
                 android:orientation="vertical"
                 android:paddingTop="10dp">
 
@@ -114,7 +114,7 @@
             <View
                 android:background="@drawable/current_order_category"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"/>
+                android:layout_height="10dp" />
             <LinearLayout
                 android:orientation="vertical"
                 android:background="@color/background"
@@ -209,6 +209,9 @@
                         android:layout_width="match_parent"
                         android:paddingBottom="@dimen/cur_order_left_margin"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
 
                 </LinearLayout>
             </LinearLayout>
