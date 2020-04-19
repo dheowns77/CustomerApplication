@@ -68,6 +68,7 @@
             android:layout_marginBottom="31dp"
             android:text="Your Current Orders"
             android:textSize="30sp"
+            android:textStyle="normal"
             app:layout_constraintBottom_toTopOf="@+id/CurOrder1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +87,7 @@
         app:headerLayout="@layout/header"
         android:background="@color/c3"
         android:layout_gravity="start"
+        app:theme="@style/NavigationViewStyle"
         app:itemTextColor="#fff"/>
 
 

@@ -169,6 +169,7 @@
         app:headerLayout="@layout/header"
         android:background="@color/c3"
         android:layout_gravity="start"
+        app:theme="@style/NavigationViewStyle"
         app:itemTextColor="#fff"/>
 
 

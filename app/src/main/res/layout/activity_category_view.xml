@@ -38,36 +38,98 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingTop="@dimen/activity_vertical_margin">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/order_history_bg"
-            android:includeFontPadding="false"
-            android:paddingVertical="10dp"
-            android:paddingStart="10dp"
-            android:text="CentsRama"
-            android:textSize="30sp" />
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/order_history_bg"
-            android:includeFontPadding="false"
-            android:paddingVertical="10dp"
-            android:paddingStart="10dp"
-            android:text="CentsRama"
-            android:textSize="30sp" />
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/order_history_bg"
-            android:includeFontPadding="false"
-            android:paddingVertical="10dp"
-            android:paddingStart="10dp"
-            android:text="CentsRama"
-            android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="CentsRama"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Wallmart"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="IDK Drugmart"
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/category_tx_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Loblabla"
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/category_tx_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Hyperstore"
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/category_tx_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Shortgo's"
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/category_tx_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Portion Foods Market"
+                    android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/category_tx_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/category_text_bg"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Stale Co."
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 </LinearLayout>
