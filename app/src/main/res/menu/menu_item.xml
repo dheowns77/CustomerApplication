@@ -10,9 +10,6 @@
         android:id="@+id/orderHistory"
         android:title="ORDER HISTORY"/>
     <item
-        android:id="@+id/support"
-        android:title="SUPPORT"/>
-    <item
         android:id="@+id/account"
         android:title="ACCOUNT"/>
     <item

@@ -1,56 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    tools:openDrawer="start"
-    android:id="@+id/drawer"
     android:background="@color/c1"
     android:layout_height="match_parent"
+    android:orientation = "vertical"
     tools:context=".CurOrderActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/c1" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
-
-
-    </RelativeLayout>
-
-    <com.google.android.material.navigation.NavigationView
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/navigationView"
-        app:menu="@menu/menu_item"
-        app:headerLayout="@layout/header"
-        android:background="@color/c3"
-        android:layout_gravity="start"
-        app:itemTextColor="#fff"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Order History 1"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/order_history_bg"
+            android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+            android:textAlignment="center" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="660dp"
-        android:layout_marginLeft="300dp"
-        android:text="Back to Home"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="257dp" />
-
-</androidx.drawerlayout.widget.DrawerLayout>
+        android:id="@+id/btn_orderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:onClick="goBackToMain"
+        android:text="Close Order History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

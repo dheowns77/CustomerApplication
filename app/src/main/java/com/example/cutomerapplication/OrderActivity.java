@@ -59,10 +59,6 @@ public class OrderActivity extends AppCompatActivity implements NavigationView.O
                 //startActivity(new Intent (OrderActivity.this, OrderActivity.class));
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.support:
-                startActivity(new Intent (OrderActivity.this, SupportActivity.class));
-                finish();
-                break;
             case R.id.account:
                 startActivity(new Intent (OrderActivity.this, AccountActivity.class));
                 finish();

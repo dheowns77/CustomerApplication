@@ -47,6 +47,9 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
     private void setSupportActionBar(Toolbar toolbar) {
     }
 
+    public void showCategory(View view){
+        startActivity(new Intent(this,CategoryViewActivity.class));
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -64,11 +67,6 @@ public class SearchActivity extends AppCompatActivity implements NavigationView.
                 startActivity(new Intent (SearchActivity.this, OrderActivity.class));
                 //Toast.makeText(MainActivity.this, "3", Toast.LENGTH_SHORT).show();
                 finish();
-                break;
-            case R.id.support:
-                startActivity(new Intent (SearchActivity.this, SupportActivity.class));
-                finish();
-               // Toast.makeText(SearchActivity.this, "4", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.account:
                 startActivity(new Intent (SearchActivity.this, AccountActivity.class));
