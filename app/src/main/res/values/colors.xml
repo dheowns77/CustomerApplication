@@ -9,5 +9,7 @@
     <color name="c4">#E4E760</color>
     <color name="c5">#000000</color>
     <color name="c6">#E4F6F9</color>
+    <color name="c7">#f6e9e9</color>
+    <color name="c8">#FFCD01</color>
     <color name="background">#ffffff</color>
 </resources>
