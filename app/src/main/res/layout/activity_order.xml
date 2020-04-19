@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     tools:openDrawer="start"
     android:id="@+id/drawer"
-    android:background="@color/c1"
+    android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".OrderActivity">
     <ScrollView
@@ -109,7 +109,7 @@
             android:id="@+id/toolbar"
             android:layout_width="401dp"
             android:layout_height="45dp"
-            android:background="@color/c1" />
+            android:background="@color/background" />
 
 
 
