@@ -9,118 +9,211 @@
     android:orientation = "vertical"
     tools:context=".CurOrderActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <ScrollView
+        android:id="@+id/curOrderScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Order Number A2CC"
-            android:textAlignment="center"
-            android:textSize="30sp" />
-
+        android:layout_height="wrap_content">
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/order_history_bg"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:paddingTop="10dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:layout_marginTop="10dp"
-                android:id="@+id/textView13"
+                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/cur_order_left_margin"
-                android:text="Loblabla - North York" />
+                android:text="Order Number A2CC"
+                android:textAlignment="center"
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
 
                 <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
-                    android:letterSpacing="0.2"
-                    android:text="10:24"
-                    android:textScaleX="1"
-                    android:textSize="36sp" />
+                    android:text="Loblabla - North York" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:letterSpacing="0.2"
+                        android:text="10:24"
+                        android:textScaleX="1"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AM"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/cur_order_left_margin"
+                        android:text="Estimated Arrival"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="AM"
-                    android:textSize="18sp" />
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:layout_marginTop="20dp"
+                    android:text="Grocery store is now preparing your order" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:layout_marginRight="@dimen/cur_order_left_margin"
+                    android:max="100"
+                    android:progress="45" />
 
                 <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingRight="@dimen/cur_order_left_margin"
-                    android:text="Estimated Arrival"
-                    android:textAlignment="textEnd"
-                    android:textSize="15sp" />
-
+                    android:layout_marginTop="20dp"
+                    android:text="Cancel Order"
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp" />
             </LinearLayout>
 
-            <TextView
+            <View
+                android:background="@drawable/current_order_category"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/cur_order_left_margin"
-                android:layout_marginTop="20dp"
-                android:text="Grocery store is now preparing your order" />
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/cur_order_left_margin"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="Order Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="1. Avocado Hash 2EA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="2. Egg 12EA 1 BOX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="3. Broccoli 1EA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="4. Flour 1KG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:text="5. Yeast 50 oz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:paddingBottom="@dimen/cur_order_left_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:text="Total: $47.42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:text="VIEW RECEIPT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+                <View
+                    android:background="@drawable/current_order_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:text="Order more today and get Discount!"
+                        android:layout_marginTop="@dimen/cur_order_left_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:text="Order $52.58 more today and get free delivery!"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/cur_order_left_margin"
+                        android:layout_height="wrap_content"/>
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:layout_marginLeft="@dimen/cur_order_left_margin"
-                android:layout_marginRight="@dimen/cur_order_left_margin"
-                android:max="100"
-                android:progress="45" />
-
-            <TextView
-                android:layout_marginBottom="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Cancel Order"
-                android:textAlignment="center"
-                android:textColor="#FF0000"
-                android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
-        <View
-            android:layout_marginTop="15dp"
-            android:background="@drawable/current_order_category"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/order_history_bg"
-            android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
-            android:textAlignment="center" />
-    </LinearLayout>
-
+    </ScrollView>
     <Button
         android:id="@+id/btn_orderHistory"
         android:layout_width="match_parent"
@@ -130,6 +223,5 @@
         android:text="Close This Order"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
