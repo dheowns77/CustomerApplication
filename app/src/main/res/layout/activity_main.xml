@@ -23,7 +23,7 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
-                android:layout_width="85dp"
+                android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:background="@color/background"
                 app:layout_constraintStart_toStartOf="parent"
@@ -34,14 +34,12 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
                 <LinearLayout
                     android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="50dp"
                     android:layout_weight="1"
                     android:orientation="vertical"
@@ -85,12 +83,27 @@
                         app:layout_constraintStart_toStartOf="@+id/textView2"
                         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-                        <TextView
+                        <LinearLayout
+                            android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="@dimen/cur_order_left_margin"
-                            android:paddingTop="@dimen/cur_order_left_margin"
-                            android:text="Loblabla - North York" />
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/cur_order_left_margin"
+                                android:paddingTop="@dimen/cur_order_left_margin"
+                                android:text="Loblabla - North York" />
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Order : A2CP"
+                                android:paddingRight="10dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -118,7 +131,7 @@
                                 android:layout_weight="1"
                                 android:paddingRight="@dimen/cur_order_left_margin"
                                 android:text="Estimated Arrival"
-                                android:textAlignment="center"
+                                android:textAlignment="textEnd"
                                 android:textSize="15sp" />
 
                         </LinearLayout>
@@ -148,20 +161,32 @@
                         android:layout_marginHorizontal="@dimen/home_hor_margin"
                         android:background="@drawable/current_order_buttons"
                         android:elevation="10dp"
-                        android:onClick="showOrderDetail"
                         android:orientation="vertical"
                         app:layout_constraintEnd_toEndOf="@+id/textView2"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="@+id/textView2"
                         app:layout_constraintTop_toBottomOf="@+id/main_order1">
-
-                        <TextView
+                        <LinearLayout
+                            android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
 
-                            android:paddingLeft="@dimen/cur_order_left_margin"
-                            android:paddingTop="@dimen/cur_order_left_margin"
-                            android:text="Loblabla - North York" />
+                                android:paddingLeft="@dimen/cur_order_left_margin"
+                                android:paddingTop="@dimen/cur_order_left_margin"
+                                android:text="Wallmart - Markham" />
+                            <TextView
+                                android:textSize="20sp"
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Order : X19E"
+                                android:paddingRight="10dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -174,7 +199,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/cur_order_left_margin"
                                 android:letterSpacing="0.2"
-                                android:text="10:24"
+                                android:text="11:30"
                                 android:textScaleX="1"
                                 android:textSize="36sp" />
 
@@ -192,7 +217,7 @@
                                 android:layout_weight="1"
                                 android:paddingRight="@dimen/cur_order_left_margin"
                                 android:text="Estimated Arrival"
-                                android:textAlignment="center"
+                                android:textAlignment="textEnd"
                                 android:textSize="15sp" />
 
                         </LinearLayout>
@@ -202,7 +227,7 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/cur_order_left_margin"
                             android:paddingTop="10dp"
-                            android:text="Order Prepared! On Delivery" />
+                            android:text="Store is preparing your order" />
 
                         <ProgressBar
 
@@ -213,7 +238,7 @@
                             android:layout_marginRight="@dimen/cur_order_left_margin"
                             android:layout_marginBottom="@dimen/cur_order_left_margin"
                             android:max="100"
-                            android:progress="85" />
+                            android:progress="30" />
                     </LinearLayout>
                     <LinearLayout
                         android:id="@+id/main_order3"
@@ -223,20 +248,31 @@
                         android:layout_marginHorizontal="@dimen/home_hor_margin"
                         android:background="@drawable/current_order_buttons"
                         android:elevation="10dp"
-                        android:onClick="showOrderDetail"
                         android:orientation="vertical"
                         app:layout_constraintEnd_toEndOf="@+id/textView2"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="@+id/textView2"
                         app:layout_constraintTop_toBottomOf="@id/main_order2">
-
-                        <TextView
-                            android:id="@+id/textView17"
+                        <LinearLayout
+                            android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="@dimen/cur_order_left_margin"
-                            android:paddingTop="@dimen/cur_order_left_margin"
-                            android:text="Loblabla - North York" />
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/cur_order_left_margin"
+                                android:paddingTop="@dimen/cur_order_left_margin"
+                                android:text="Shortgo's - Bayview and Sheppard" />
+                            <TextView
+                                android:textSize="20sp"
+                                android:textAlignment="textEnd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Order : H1DE"
+                                android:paddingRight="10dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -249,7 +285,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/cur_order_left_margin"
                                 android:letterSpacing="0.2"
-                                android:text="10:24"
+                                android:text="1:20"
                                 android:textScaleX="1"
                                 android:textSize="36sp" />
 
@@ -257,7 +293,7 @@
                                 android:id="@+id/textView15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="AM"
+                                android:text="PM"
                                 android:textSize="18sp" />
 
                             <TextView
@@ -267,7 +303,7 @@
                                 android:layout_weight="1"
                                 android:paddingRight="@dimen/cur_order_left_margin"
                                 android:text="Estimated Arrival"
-                                android:textAlignment="center"
+                                android:textAlignment="textEnd"
                                 android:textSize="15sp" />
 
                         </LinearLayout>
@@ -277,7 +313,7 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="@dimen/cur_order_left_margin"
                             android:paddingTop="10dp"
-                            android:text="Order Prepared! On Delivery" />
+                            android:text="Order Placed!" />
 
                         <ProgressBar
                             android:id="@+id/progressBar"
@@ -288,7 +324,7 @@
                             android:layout_marginRight="@dimen/cur_order_left_margin"
                             android:layout_marginBottom="@dimen/cur_order_left_margin"
                             android:max="100"
-                            android:progress="85" />
+                            android:progress="10" />
 
                     </LinearLayout>
                     <TextView
