@@ -1,34 +1,40 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory app:title="Saved Palces">
 
         <EditTextPreference
             app:key="signature"
-            app:title="@string/signature_title"
+            app:title="Home Address"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
             app:key="reply"
-            app:title="@string/reply_title"
+            app:title="Work Address"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/sync_header">
+    <PreferenceCategory app:title="Contacts">
 
         <SwitchPreferenceCompat
             app:key="sync"
-            app:title="@string/sync_title" />
+            app:title="Automatically select default delivery address" />
 
-        <SwitchPreferenceCompat
+        <EditTextPreference
             app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
+            app:key="address"
+            app:useSimpleSummaryProvider="true"
+            app:title="Address" />
+        <EditTextPreference
+            app:dependency="sync"
+            app:useSimpleSummaryProvider="true"
+            app:key="phone"
+            app:title="Phone Number" />
+        <EditTextPreference
+            app:dependency="sync"
+            app:useSimpleSummaryProvider="true"
+            app:key="name"
+            app:title="Name" />
 
     </PreferenceCategory>
 
