@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        configureSearchButton();
-
         drawerLayout = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
         navigationView = findViewById(R.id.navigationView);
@@ -56,18 +54,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
     */
 
-
-   private void configureSearchButton(){
-
-       Button CurOrder1 = (Button) findViewById(R.id.CurOrder1);
-       CurOrder1.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               startActivity(new Intent (MainActivity.this, CurOrderActivity.class));
-           }
-       });
-
+   public void showOrderDetail(View view){
+       startActivity(new Intent(this,CurOrderActivity.class));
    }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
