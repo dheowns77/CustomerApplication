@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Order History 1"
+                android:text="20200414 Loblabla"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -31,13 +31,13 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
-                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+                android:text="Order Number : A2CP&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $42.24"
                 android:textAlignment="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Order History 2"
+                android:text="20200413 Portion Foods Market"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -45,14 +45,14 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
-                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+                android:text="Order Number : X12E&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $28.98"
                 android:textAlignment="center"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Order History 3"
+                android:text="20200111 Hyperstore"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -60,13 +60,13 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
-                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+                android:text="Order Number : C2DH&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $16.70"
                 android:textAlignment="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Order History 4"
+                android:text="20191221 Joeun"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -74,13 +74,13 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
-                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+                android:text="Very Special Day"
                 android:textAlignment="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Order History 5"
+                android:text="20191002 Us"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -88,7 +88,7 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
-                android:text="Hello &#xA; DaeJun is Babo &#xA; Daejun is MongChong E &#xA; Daejun is Daeji"
+                android:text="Amazing Special Day"
                 android:textAlignment="center"/>
 
 
