@@ -27,7 +27,20 @@ public class NewOrder extends AppCompatActivity {
     }
 
     public void orderNow(View view){
-        startActivity(new Intent(this,CurOrderActivity.class));
+        Intent item = new Intent(this,CurOrderActivity.class);
+        int orderNum1 = Integer.parseInt(((TextView)findViewById(R.id.new_order_text_1)).getText().toString());
+        int orderNum2 = Integer.parseInt(((TextView)findViewById(R.id.new_order_text_2)).getText().toString());
+        int orderNum3 = Integer.parseInt(((TextView)findViewById(R.id.new_order_text_3)).getText().toString());
+        int orderNum4 = Integer.parseInt(((TextView)findViewById(R.id.new_order_text_4)).getText().toString());
+        int orderNum5 = Integer.parseInt(((TextView)findViewById(R.id.new_order_text_5)).getText().toString());
+        int price = orderNum1+orderNum2+orderNum3+orderNum4+orderNum5;
+        item.putExtra("num1",orderNum1);
+        item.putExtra("num2",orderNum2);
+        item.putExtra("num3",orderNum3);
+        item.putExtra("num4",orderNum4);
+        item.putExtra("num5",orderNum5);
+        item.putExtra("price",price);
+        startActivity(item);
         finish();
     }
 
