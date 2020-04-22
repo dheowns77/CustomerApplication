@@ -103,7 +103,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Order : A2CP"
-                                android:paddingRight="10dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/red_hat_regular"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -191,7 +192,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Order : X19E"
-                                android:paddingRight="10dp"
+                                android:layout_marginRight="20dp"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/red_hat_regular"/>
                         </LinearLayout>
@@ -276,7 +277,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/cur_order_left_margin"
                                 android:paddingTop="@dimen/cur_order_left_margin"
-                                android:text="Shortgo's - Bayview and Sheppard"
+                                android:text="Shortgo's - Bayview"
                                 android:fontFamily="@font/red_hat_regular"/>
                             <TextView
                                 android:textSize="20sp"
@@ -284,7 +285,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Order : H1DE"
-                                android:paddingRight="10dp"
+                                android:layout_marginRight="20dp"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/red_hat_regular"/>
                         </LinearLayout>
