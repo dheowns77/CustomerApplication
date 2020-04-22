@@ -53,7 +53,7 @@
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:layout_marginHorizontal="@dimen/cur_order_left_margin"
                     android:layout_marginTop="10dp"
                     android:text="Loblabla - North York"
                     android:fontFamily="@font/red_hat_medium"/>
@@ -89,8 +89,9 @@
                         android:layout_weight="1"
                         android:paddingRight="@dimen/cur_order_left_margin"
                         android:text="Estimated Arrival"
+                        android:layout_marginHorizontal="@dimen/cur_order_left_margin"
                         android:textAlignment="textEnd"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/red_hat_italic"/>
 
                 </LinearLayout>
@@ -139,7 +140,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/cur_order_left_margin"
+                    android:layout_marginHorizontal="@dimen/cur_order_left_margin"
                     android:layout_marginTop="@dimen/cur_order_left_margin"
                     android:text="Order Details"
                     android:fontFamily="@font/red_hat_regular"/>
@@ -215,11 +216,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:layout_marginRight="@dimen/cur_order_left_margin"
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
-                        android:gravity="end"
+                        android:textAlignment="textEnd"
                         android:text="VIEW RECEIPT"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -250,7 +251,7 @@
                         android:id="@+id/cur_order_promote"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/cur_order_left_margin"
+                        android:layout_marginHorizontal="@dimen/cur_order_left_margin"
                         android:paddingTop="15dp"
                         android:paddingBottom="@dimen/cur_order_left_margin"
                         android:text="Order $52.58 more today and get free delivery!"

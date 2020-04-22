@@ -85,7 +85,7 @@
                             android:paddingRight="15dp"
                             android:text="-"
                             android:fontFamily="@font/red_hat_regular"
-                            android:textSize="40sp"
+                            android:textSize="35sp"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/new_order_text_1"
@@ -167,7 +167,7 @@
                             android:paddingRight="15dp"
                             android:text="-"
                             android:fontFamily="@font/red_hat_regular"
-                            android:textSize="40sp"
+                            android:textSize="35sp"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/new_order_text_2"
@@ -249,7 +249,7 @@
                             android:paddingRight="15dp"
                             android:text="-"
                             android:fontFamily="@font/red_hat_regular"
-                            android:textSize="40sp"
+                            android:textSize="35sp"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/new_order_text_3"
@@ -331,7 +331,7 @@
                             android:paddingRight="15dp"
                             android:text="-"
                             android:fontFamily="@font/red_hat_regular"
-                            android:textSize="40sp"
+                            android:textSize="35sp"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/new_order_text_4"
@@ -413,7 +413,7 @@
                             android:paddingRight="15dp"
                             android:text="-"
                             android:fontFamily="@font/red_hat_regular"
-                            android:textSize="40sp"
+                            android:textSize="35sp"
                             android:textStyle="bold" />
                         <TextView
                             android:id="@+id/new_order_text_5"

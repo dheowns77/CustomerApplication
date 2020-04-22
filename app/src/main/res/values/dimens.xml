@@ -8,4 +8,5 @@
     <dimen name="search_opacity">0.3</dimen>
     <dimen name="cur_order_left_margin">30dp</dimen>
     <dimen name="home_hor_margin">20dp</dimen>
+    <dimen name="home_buttons_leftmargin">20dp</dimen>
 </resources>

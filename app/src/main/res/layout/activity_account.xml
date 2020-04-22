@@ -186,9 +186,9 @@
 
         <TextView
             android:padding="15dp"
-            android:background="@color/background"
-            android:elevation="10dp"
+            android:background="@drawable/sign_out"
             android:textAlignment="center"
+            android:elevation="10dp"
             android:id="@+id/signoutbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -197,8 +197,8 @@
             android:layout_marginBottom="16dp"
             android:text="Sign Out"
             android:fontFamily="@font/red_hat_regular"
-            android:textColor="#FF0000"
-            android:textSize="36sp"
+            android:textColor="@color/c2"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
