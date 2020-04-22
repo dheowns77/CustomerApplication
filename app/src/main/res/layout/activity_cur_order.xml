@@ -37,7 +37,8 @@
                 android:paddingBottom="10dp"
                 android:text="Order Number A2CC"
                 android:textAlignment="center"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="@font/red_hat_medium"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +55,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="10dp"
-                    android:text="Loblabla - North York" />
+                    android:text="Loblabla - North York"
+                    android:fontFamily="@font/red_hat_medium"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -69,14 +71,16 @@
                         android:letterSpacing="0.2"
                         android:text="10:24"
                         android:textScaleX="1"
-                        android:textSize="36sp" />
+                        android:textSize="36sp"
+                        android:fontFamily="@font/red_hat_medium"/>
 
                     <TextView
                         android:id="@+id/textView15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="AM"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:fontFamily="@font/red_hat_medium"/>
 
                     <TextView
                         android:id="@+id/textView16"
@@ -86,7 +90,8 @@
                         android:paddingRight="@dimen/cur_order_left_margin"
                         android:text="Estimated Arrival"
                         android:textAlignment="textEnd"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:fontFamily="@font/red_hat_italic"/>
 
                 </LinearLayout>
 
@@ -95,7 +100,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="20dp"
-                    android:text="Order Prepared! On delivery" />
+                    android:text="Order Prepared! On delivery"
+                    android:fontFamily="@font/josefinsans_light"/>
 
                 <ProgressBar
                     android:id="@+id/progressBar"
@@ -115,7 +121,8 @@
                     android:text="Cancel Order"
                     android:textAlignment="center"
                     android:textColor="#FF0000"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
             </LinearLayout>
 
             <View
@@ -134,7 +141,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="@dimen/cur_order_left_margin"
-                    android:text="Order Details" />
+                    android:text="Order Details"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <TextView
                     android:id="@+id/cur_order_text_1"
@@ -143,7 +151,8 @@
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="15dp"
                     android:text="1. Avocado Hash 2EA"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <TextView
                     android:id="@+id/cur_order_text_2"
@@ -152,7 +161,8 @@
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="15dp"
                     android:text="2. Egg 12EA 1 BOX"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <TextView
                     android:id="@+id/cur_order_text_3"
@@ -161,7 +171,8 @@
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="15dp"
                     android:text="3. Broccoli 1EA"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <TextView
                     android:id="@+id/cur_order_text_4"
@@ -170,7 +181,8 @@
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="15dp"
                     android:text="4. Flour 1KG"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <TextView
                     android:id="@+id/cur_order_text_5"
@@ -179,7 +191,8 @@
                     android:layout_marginLeft="@dimen/cur_order_left_margin"
                     android:layout_marginTop="15dp"
                     android:text="5. Yeast 50 oz"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:fontFamily="@font/red_hat_regular"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -196,7 +209,8 @@
                         android:layout_weight="1"
                         android:text="Total: $47.42"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/josefinsans_bold"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -208,7 +222,8 @@
                         android:gravity="end"
                         android:text="VIEW RECEIPT"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="@font/red_hat_regular"/>
                 </LinearLayout>
 
                 <View
@@ -228,7 +243,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/cur_order_left_margin"
                         android:layout_marginTop="@dimen/cur_order_left_margin"
-                        android:text="Order more today and get Discount!" />
+                        android:text="Order more today and get Discount!"
+                        android:fontFamily="@font/red_hat_regular"/>
 
                     <TextView
                         android:id="@+id/cur_order_promote"
@@ -238,11 +254,13 @@
                         android:paddingTop="15dp"
                         android:paddingBottom="@dimen/cur_order_left_margin"
                         android:text="Order $52.58 more today and get free delivery!"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:fontFamily="@font/red_hat_regular"/>
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp" />
+                        android:layout_height="100dp"
+                        android:fontFamily="@font/red_hat_regular"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -255,6 +273,7 @@
         android:layout_weight="1"
         android:onClick="goBackToMain"
         android:text="Close This Order"
+        android:fontFamily="@font/red_hat_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
