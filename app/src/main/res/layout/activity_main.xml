@@ -54,7 +54,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginHorizontal="10dp"
                         android:text="Welcome back, Jane Doe!"
-                        android:fontFamily="@font/josefinsans_bold"
+                        android:fontFamily="@font/red_hat_regular"
                         android:textSize="30sp" />
 
                     <TextView

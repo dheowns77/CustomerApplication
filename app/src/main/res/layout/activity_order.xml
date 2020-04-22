@@ -24,6 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="20200414 Loblabla"
+                android:fontFamily="@font/red_hat_regular"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -31,12 +32,14 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
+                android:fontFamily="@font/red_hat_regular"
                 android:text="Order Number : A2CP&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $42.24"
                 android:textAlignment="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/red_hat_regular"
                 android:text="20200413 Portion Foods Market"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
@@ -45,6 +48,7 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
+                android:fontFamily="@font/red_hat_regular"
                 android:text="Order Number : X12E&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $28.98"
                 android:textAlignment="center"/>
 
@@ -52,6 +56,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/red_hat_regular"
                 android:text="20200111 Hyperstore"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
@@ -60,6 +65,7 @@
                 android:layout_height="200dp"
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
+                android:fontFamily="@font/red_hat_regular"
                 android:text="Order Number : C2DH&#xA;&#xA; 12:34 PM &#xA; MilK 2L &#xA; Orange 12EA &#xA; Apple 10EA &#xA; Eggs 12EA&#xA; $16.70"
                 android:textAlignment="center"/>
 
@@ -67,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="20191221 Joeun"
+                android:fontFamily="@font/red_hat_regular"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -75,12 +82,14 @@
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
                 android:text="Very Special Day"
+                android:fontFamily="@font/red_hat_regular"
                 android:textAlignment="center"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="20191002 Us"
+                android:fontFamily="@font/red_hat_regular"
                 android:textSize="30sp"
                 android:textAlignment="center"/>
             <TextView
@@ -89,6 +98,7 @@
                 android:background="@drawable/order_history_bg"
                 android:layout_margin="20dp"
                 android:text="Amazing Special Day"
+                android:fontFamily="@font/red_hat_regular"
                 android:textAlignment="center"/>
 
 

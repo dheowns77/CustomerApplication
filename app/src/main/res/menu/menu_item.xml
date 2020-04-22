@@ -2,19 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="HOME"/>
+        android:title="HOME"
+        android:fontFamily="@font/red_hat_regular"/>
     <item
         android:id="@+id/search"
-        android:title="SEARCH"/>
+        android:title="SEARCH"
+        android:fontFamily="@font/red_hat_regular"/>
     <item
         android:id="@+id/orderHistory"
-        android:title="ORDER HISTORY"/>
+        android:title="ORDER HISTORY"
+        android:fontFamily="@font/red_hat_regular"/>
     <item
         android:id="@+id/account"
-        android:title="ACCOUNT"/>
+        android:title="ACCOUNT"
+        android:fontFamily="@font/red_hat_regular"/>
     <item
         android:id="@+id/setting"
-        android:title="SETTING"/>
+        android:title="SETTING"
+        android:fontFamily="@font/red_hat_regular"/>
 
 
 
