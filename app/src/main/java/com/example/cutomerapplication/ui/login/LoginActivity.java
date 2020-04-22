@@ -5,7 +5,9 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -120,12 +122,22 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         });
+        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        String prevName = sharedPref.getString("prev_name",null);
+        if(prevName != null) {
+            usernameEditText.setText(prevName);
+        }
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+        SharedPreferences sharedPreferences = this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        final EditText usernameEditText = findViewById(R.id.username);
+        editor.putString("prev_name",usernameEditText.getText().toString());
+        editor.commit();
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
