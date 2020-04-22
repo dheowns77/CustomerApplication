@@ -50,7 +50,6 @@ public class CurOrderActivity extends AppCompatActivity {
 
     public void goBackToMain(View view){
         startActivity(new Intent(this,MainActivity.class));
-        finish();
     }
 
 }
